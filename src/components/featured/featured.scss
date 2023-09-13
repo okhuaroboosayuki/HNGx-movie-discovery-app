@@ -1,0 +1,159 @@
+.featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0;
+
+    .featured_container {
+        flex-direction: column;
+        display: flex;
+        gap: 1.5rem;
+
+        .heading_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 2.25rem;
+            }
+
+            .see_more {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                font-size: 1.125rem;
+                text-transform: capitalize;
+                color: #be123c;
+            }
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 1.5rem;
+            gap: 5rem;
+            border: .005px dotted lightgray;
+
+            .movie_list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .movie_card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.75rem;
+
+                    .poster {
+                        padding: 0.38rem 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+                        width: 15.625rem;
+                        height: 23.125rem;
+
+                        .poster_image {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            height: 100%;
+                            width: 100%;
+                        }
+
+                        .movie_category {
+                            z-index: 200;
+                            display: flex;
+                            padding: 3px 8px;
+                            align-items: flex-start;
+                            gap: 0.625rem;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 7.125rem;
+
+                            .movie_type,
+                            .like_btn {
+                                background-color: rgba(243, 244, 246, 0.5);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                            .movie_type {
+                                border-radius: 12px;
+                                padding: 0.19rem 0.5rem;
+                                font-size: 0.75rem;
+                            }
+
+                            .like_btn {
+                                border-radius: 50%;
+                                width: 1.875rem;
+                                height: 1.82569rem;
+                                cursor: pointer;
+
+                                img {
+                                    width: 1.25rem;
+                                    height: 1.21713rem;
+                                    flex-shrink: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .movie_year {
+                        color: #9ca3af;
+                        font-size: 0.75rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    .movie_title {
+                        color: #111827;
+                        font-size: 1.125rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    .movie_rating {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        .imdb,
+                        .rotten_tomatoes {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.625rem;
+
+                            span {
+                                font-size: 0.75rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 0.75rem;
+                            }
+                        }
+
+                        .movie_genre {
+                            font-size: 0.75rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            // padding: ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
