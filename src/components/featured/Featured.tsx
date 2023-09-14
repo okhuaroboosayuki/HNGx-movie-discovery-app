@@ -10,7 +10,7 @@ export const Featured = () => {
           <div className="heading_container">
             <h2>Featured Movie</h2>
             <a href="#" className="see_more">
-              see more <img src="/src/images/right.svg" alt="" />
+              see more <img src="/images/right.svg" alt="" />
             </a>
           </div>
 
@@ -21,7 +21,7 @@ export const Featured = () => {
                   <div
                     className="poster_image"
                     style={{
-                      backgroundImage: "url(/src/images/stranger_things.png)",
+                      backgroundImage: "url(/images/stranger_things.png)",
                     }}
                   ></div>
                   <div className="movie_category">
@@ -29,7 +29,7 @@ export const Featured = () => {
                       <h4>TV SERIES</h4>
                     </div>
                     <div className="like_btn">
-                      <img src="/src/images/heart.svg" alt="like btn" />
+                      <img src="/images/heart.svg" alt="like btn" />
                     </div>
                   </div>
                 </div>
@@ -39,12 +39,12 @@ export const Featured = () => {
 
                 <div className="movie_rating">
                   <div className="imdb">
-                    <img src="/src/images/imdb.svg" alt="imdb" />
+                    <img src="/images/imdb.svg" alt="imdb" />
                     <span>86.0/100</span>
                   </div>
                   <div className="rotten_tomatoes">
                     <img
-                      src="/src/images/rotten_tomatoes.svg"
+                      src="/images/rotten_tomatoes.svg"
                       alt="rotten tomatoes"
                     />
                     <span>97%</span>
@@ -61,7 +61,7 @@ export const Featured = () => {
                   <div
                     className="poster_image"
                     style={{
-                      backgroundImage: "url(/src/images/stranger_things.png)",
+                      backgroundImage: "url(/images/stranger_things.png)",
                     }}
                   ></div>
                   <div className="movie_category">
@@ -69,7 +69,7 @@ export const Featured = () => {
                       <h4>TV SERIES</h4>
                     </div>
                     <div className="like_btn">
-                      <img src="/src/images/heart.svg" alt="like btn" />
+                      <img src="/images/heart.svg" alt="like btn" />
                     </div>
                   </div>
                 </div>
@@ -79,12 +79,12 @@ export const Featured = () => {
 
                 <div className="movie_rating">
                   <div className="imdb">
-                    <img src="/src/images/imdb.svg" alt="imdb" />
+                    <img src="/images/imdb.svg" alt="imdb" />
                     <span>86.0/100</span>
                   </div>
                   <div className="rotten_tomatoes">
                     <img
-                      src="/src/images/rotten_tomatoes.svg"
+                      src="/images/rotten_tomatoes.svg"
                       alt="rotten tomatoes"
                     />
                     <span>97%</span>
@@ -101,7 +101,7 @@ export const Featured = () => {
                   <div
                     className="poster_image"
                     style={{
-                      backgroundImage: "url(/src/images/stranger_things.png)",
+                      backgroundImage: "url(/images/stranger_things.png)",
                     }}
                   ></div>
                   <div className="movie_category">
@@ -109,7 +109,7 @@ export const Featured = () => {
                       <h4>TV SERIES</h4>
                     </div>
                     <div className="like_btn">
-                      <img src="/src/images/heart.svg" alt="like btn" />
+                      <img src="/images/heart.svg" alt="like btn" />
                     </div>
                   </div>
                 </div>
@@ -119,12 +119,12 @@ export const Featured = () => {
 
                 <div className="movie_rating">
                   <div className="imdb">
-                    <img src="/src/images/imdb.svg" alt="imdb" />
+                    <img src="/images/imdb.svg" alt="imdb" />
                     <span>86.0/100</span>
                   </div>
                   <div className="rotten_tomatoes">
                     <img
-                      src="/src/images/rotten_tomatoes.svg"
+                      src="/images/rotten_tomatoes.svg"
                       alt="rotten tomatoes"
                     />
                     <span>97%</span>
@@ -141,7 +141,7 @@ export const Featured = () => {
                   <div
                     className="poster_image"
                     style={{
-                      backgroundImage: "url(/src/images/stranger_things.png)",
+                      backgroundImage: "url(/images/stranger_things.png)",
                     }}
                   ></div>
                   <div className="movie_category">
@@ -149,7 +149,7 @@ export const Featured = () => {
                       <h4>TV SERIES</h4>
                     </div>
                     <div className="like_btn">
-                      <img src="/src/images/heart.svg" alt="like btn" />
+                      <img src="/images/heart.svg" alt="like btn" />
                     </div>
                   </div>
                 </div>
@@ -159,12 +159,12 @@ export const Featured = () => {
 
                 <div className="movie_rating">
                   <div className="imdb">
-                    <img src="/src/images/imdb.svg" alt="imdb" />
+                    <img src="/images/imdb.svg" alt="imdb" />
                     <span>86.0/100</span>
                   </div>
                   <div className="rotten_tomatoes">
                     <img
-                      src="/src/images/rotten_tomatoes.svg"
+                      src="/images/rotten_tomatoes.svg"
                       alt="rotten tomatoes"
                     />
                     <span>97%</span>
@@ -187,7 +187,7 @@ export const Featured = () => {
                   <div
                     className="poster_image"
                     style={{
-                      backgroundImage: "url(/src/images/stranger_things.png)",
+                      backgroundImage: "url(/images/stranger_things.png)",
                     }}
                   ></div>
                   <div className="movie_category">
@@ -195,7 +195,7 @@ export const Featured = () => {
                       <h4>TV SERIES</h4>
                     </div>
                     <div className="like_btn">
-                      <img src="/src/images/heart.svg" alt="like btn" />
+                      <img src="/images/heart.svg" alt="like btn" />
                     </div>
                   </div>
                 </div>
@@ -205,12 +205,12 @@ export const Featured = () => {
 
                 <div className="movie_rating">
                   <div className="imdb">
-                    <img src="/src/images/imdb.svg" alt="imdb" />
+                    <img src="/images/imdb.svg" alt="imdb" />
                     <span>86.0/100</span>
                   </div>
                   <div className="rotten_tomatoes">
                     <img
-                      src="/src/images/rotten_tomatoes.svg"
+                      src="/images/rotten_tomatoes.svg"
                       alt="rotten tomatoes"
                     />
                     <span>97%</span>
@@ -227,7 +227,7 @@ export const Featured = () => {
                   <div
                     className="poster_image"
                     style={{
-                      backgroundImage: "url(/src/images/stranger_things.png)",
+                      backgroundImage: "url(/images/stranger_things.png)",
                     }}
                   ></div>
                   <div className="movie_category">
@@ -235,7 +235,7 @@ export const Featured = () => {
                       <h4>TV SERIES</h4>
                     </div>
                     <div className="like_btn">
-                      <img src="/src/images/heart.svg" alt="like btn" />
+                      <img src="/images/heart.svg" alt="like btn" />
                     </div>
                   </div>
                 </div>
@@ -245,12 +245,12 @@ export const Featured = () => {
 
                 <div className="movie_rating">
                   <div className="imdb">
-                    <img src="/src/images/imdb.svg" alt="imdb" />
+                    <img src="/images/imdb.svg" alt="imdb" />
                     <span>86.0/100</span>
                   </div>
                   <div className="rotten_tomatoes">
                     <img
-                      src="/src/images/rotten_tomatoes.svg"
+                      src="/images/rotten_tomatoes.svg"
                       alt="rotten tomatoes"
                     />
                     <span>97%</span>
@@ -267,7 +267,7 @@ export const Featured = () => {
                   <div
                     className="poster_image"
                     style={{
-                      backgroundImage: "url(/src/images/stranger_things.png)",
+                      backgroundImage: "url(/images/stranger_things.png)",
                     }}
                   ></div>
                   <div className="movie_category">
@@ -275,7 +275,7 @@ export const Featured = () => {
                       <h4>TV SERIES</h4>
                     </div>
                     <div className="like_btn">
-                      <img src="/src/images/heart.svg" alt="like btn" />
+                      <img src="/images/heart.svg" alt="like btn" />
                     </div>
                   </div>
                 </div>
@@ -285,12 +285,12 @@ export const Featured = () => {
 
                 <div className="movie_rating">
                   <div className="imdb">
-                    <img src="/src/images/imdb.svg" alt="imdb" />
+                    <img src="/images/imdb.svg" alt="imdb" />
                     <span>86.0/100</span>
                   </div>
                   <div className="rotten_tomatoes">
                     <img
-                      src="/src/images/rotten_tomatoes.svg"
+                      src="/images/rotten_tomatoes.svg"
                       alt="rotten tomatoes"
                     />
                     <span>97%</span>
@@ -307,7 +307,7 @@ export const Featured = () => {
                   <div
                     className="poster_image"
                     style={{
-                      backgroundImage: "url(/src/images/stranger_things.png)",
+                      backgroundImage: "url(/images/stranger_things.png)",
                     }}
                   ></div>
                   <div className="movie_category">
@@ -315,7 +315,7 @@ export const Featured = () => {
                       <h4>TV SERIES</h4>
                     </div>
                     <div className="like_btn">
-                      <img src="/src/images/heart.svg" alt="like btn" />
+                      <img src="/images/heart.svg" alt="like btn" />
                     </div>
                   </div>
                 </div>
@@ -325,12 +325,12 @@ export const Featured = () => {
 
                 <div className="movie_rating">
                   <div className="imdb">
-                    <img src="/src/images/imdb.svg" alt="imdb" />
+                    <img src="/images/imdb.svg" alt="imdb" />
                     <span>86.0/100</span>
                   </div>
                   <div className="rotten_tomatoes">
                     <img
-                      src="/src/images/rotten_tomatoes.svg"
+                      src="/images/rotten_tomatoes.svg"
                       alt="rotten tomatoes"
                     />
                     <span>97%</span>

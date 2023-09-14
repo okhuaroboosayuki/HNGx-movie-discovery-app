@@ -21,7 +21,7 @@ export const Header = () => {
       <div
         className="bg_image"
         style={{
-          backgroundImage: "url(/src/images/john_wick.svg)",
+          backgroundImage: "url(/images/john_wick.svg)",
         }}
       ></div>
 
@@ -29,7 +29,7 @@ export const Header = () => {
         <nav>
           <a href="https//" className="logo">
             <img
-              src="/src/images/logo.svg"
+              src="/images/logo.svg"
               alt="Movie Discovery Logo"
               loading="lazy"
             />
@@ -43,7 +43,7 @@ export const Header = () => {
               className="search_input"
             />
             <img
-              src="/src/images/Search.svg"
+              src="/images/Search.svg"
               alt="search icon"
               className="search_icon"
             />
@@ -68,12 +68,12 @@ export const Header = () => {
             <h2>John Wick 3 : Parabellum</h2>
             <div className="rating">
               <div className="imdb">
-                <img src="/src/images/imdb.svg" alt="imdb" />
+                <img src="/images/imdb.svg" alt="imdb" />
                 <span>86.0/100</span>
               </div>
 
               <div className="rotten_tomatoes">
-                <img src="/src/images/rotten_tomatoes.svg" alt="rotten tomatoes" />
+                <img src="/images/rotten_tomatoes.svg" alt="rotten tomatoes" />
                 <span>97%</span>
               </div>
             </div>
@@ -85,7 +85,7 @@ export const Header = () => {
             </p>
 
             <button>
-              <img src="/src/images/Play.svg" alt="play" />
+              <img src="/images/Play.svg" alt="play" />
               watch trailer
             </button>
           </div>

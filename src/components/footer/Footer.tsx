@@ -7,22 +7,22 @@ export const Footer = () => {
         <ul>
           <li>
             <a href="#">
-              <img src="/src/images/facebook.svg" alt="facebook" loading="lazy"/>
+              <img src="/images/facebook.svg" alt="facebook" loading="lazy"/>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="/src/images/instagram.svg" alt="instagram" loading="lazy"/>
+              <img src="/images/instagram.svg" alt="instagram" loading="lazy"/>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="/src/images/twitter.svg" alt="twitter" loading="lazy"/>
+              <img src="/images/twitter.svg" alt="twitter" loading="lazy"/>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="/src/images/youtube.svg" alt="youtube" loading="lazy"/>
+              <img src="/images/youtube.svg" alt="youtube" loading="lazy"/>
             </a>
           </li>
         </ul>
