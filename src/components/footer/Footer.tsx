@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./footer.scss";
 
 export const Footer = () => {
@@ -6,37 +7,37 @@ export const Footer = () => {
       <div className="social_links">
         <ul>
           <li>
-            <a href="#">
+            <Link to={"https://www.facebook.com/"}>
               <img src="/images/facebook.svg" alt="facebook" loading="lazy"/>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to={"https://www.instagram.com/"}>
               <img src="/images/instagram.svg" alt="instagram" loading="lazy"/>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to={"https://twitter.com/"}>
               <img src="/images/twitter.svg" alt="twitter" loading="lazy"/>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to={"https://www.youtube.com/"}>
               <img src="/images/youtube.svg" alt="youtube" loading="lazy"/>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="other_links">
         <ul>
           <li>
-            <a href="#">Conditions of Use</a>
+            <Link to={"/"}>Conditions of Use</Link>
           </li>
           <li>
-            <a href="#">Privacy & Policy</a>
+            <Link to={"/"}>Privacy & Policy</Link>
           </li>
           <li>
-            <a href="#">Press Room</a>
+            <Link to={"/"}>Press Room</Link>
           </li>
         </ul>
       </div>

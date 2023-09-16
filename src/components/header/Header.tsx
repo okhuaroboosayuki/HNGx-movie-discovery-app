@@ -1,7 +1,15 @@
 import { useState } from "react";
+import { A11y, Navigation, Pagination, EffectFade } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/scss";
+import "swiper/scss/pagination";
+import "swiper/scss/effect-fade";
 import "./header.scss";
+// import { useFetch } from "../../hooks/useFetch";
+import { Link } from "react-router-dom";
 
-export const Header = () => {
+export const Header = ({error, data}: any) => {
+
   const [burgerBarClass, setBurgerBarClass] = useState("burger_bar unclicked");
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -16,88 +24,121 @@ export const Header = () => {
     setMenuToggle(!menuToggle);
   };
 
+  if (error) {
+    console.log(error);
+  }
+
+  const slicedData = data?.results?.slice(0, 5);
+
+  const pagination = {
+    el: ".pagination",
+    clickable: true,
+    renderBullet: function (index: any, className: any) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  };
+
   return (
     <header>
-      <div
-        className="bg_image"
-        style={{
-          backgroundImage: "url(/images/john_wick.svg)",
+      <Swiper
+        modules={[Navigation, Pagination, A11y, EffectFade]}
+        pagination={pagination}
+        speed={1000}
+        allowTouchMove={true}
+        effect="fade"
+        fadeEffect={{
+          crossFade: true,
         }}
-      ></div>
-
-      <div className="container">
-        <nav>
-          <a href="https//" className="logo">
-            <img
-              src="/images/logo.svg"
-              alt="Movie Discovery Logo"
-              loading="lazy"
-            />
-            <span>MovieBox</span>
-          </a>
-
-          <div className="search">
-            <input
-              type="search"
-              placeholder="What do you want to watch?"
-              className="search_input"
-            />
-            <img
-              src="/images/Search.svg"
-              alt="search icon"
-              className="search_icon"
-            />
-          </div>
-
-          <div className="auth_and_mobileMenu">
-            <a href="#">Sign In</a>
+      >
+        {slicedData?.map((movie: any) => (
+          <SwiperSlide key={movie.id}>
             <div
-              className="responsive_menu_icon"
-              onClick={() => {
-                showMenu();
+              className="bg_image"
+              style={{
+                backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.backdrop_path})`,
               }}
-            >
-              <div className={burgerBarClass}></div>
-              <div className={burgerBarClass}></div>
-            </div>
-          </div>
-        </nav>
+            ></div>
 
-        <div className="description_container">
-          <div className="description_box">
-            <h2>John Wick 3 : Parabellum</h2>
-            <div className="rating">
-              <div className="imdb">
-                <img src="/images/imdb.svg" alt="imdb" />
-                <span>86.0/100</span>
+            <div className="wrapper">
+              <div className="container">
+                <nav>
+                  <Link to={"/"} className="logo">
+                    <img
+                      src="/images/logo.svg"
+                      alt="Movie Discovery Logo"
+                      loading="lazy"
+                    />
+                    <span>MovieBox</span>
+                  </Link>
+
+                  <div className="search">
+                    <input
+                      type="search"
+                      placeholder="What do you want to watch?"
+                      className="search_input"
+                    />
+                    <img
+                      src="/images/Search.svg"
+                      alt="search icon"
+                      className="search_icon"
+                    />
+                  </div>
+
+                  <div className="auth_and_mobileMenu">
+                    <a href="#">Sign In</a>
+                    <div
+                      className="responsive_menu_icon"
+                      onClick={() => {
+                        showMenu();
+                      }}
+                    >
+                      <div className={burgerBarClass}></div>
+                      <div className={burgerBarClass}></div>
+                    </div>
+                  </div>
+                </nav>
+
+                <div className="description_container">
+                  <div className="description_box">
+                    <h2>
+                      <Link to={`/movies/${movie.id}`}>
+                      {movie.title}
+                      </Link>
+                    </h2>
+                    <div className="rating">
+                      <div className="imdb">
+                        <img src="/images/imdb.svg" alt="imdb" />
+                        <span>86.0/100</span>
+                      </div>
+
+                      <div className="rotten_tomatoes">
+                        <img
+                          src="/images/rotten_tomatoes.svg"
+                          alt="rotten tomatoes"
+                        />
+                        <span>97%</span>
+                      </div>
+                    </div>
+
+                    <p className="description">
+                      {movie.overview}
+                    </p>
+
+                    <button>
+                      <img src="/images/Play.svg" alt="play" />
+                      watch trailer
+                    </button>
+                  </div>
+                </div>
               </div>
-
-              <div className="rotten_tomatoes">
-                <img src="/images/rotten_tomatoes.svg" alt="rotten tomatoes" />
-                <span>97%</span>
-              </div>
             </div>
+          </SwiperSlide>
+        ))}
 
-            <p className="description">
-              John Wick is on the run after killing a member of the
-              international assassins' guild, and with a $14 million price tag
-              on his head, he is the target of hit men and women everywhere.
-            </p>
-
-            <button>
-              <img src="/images/Play.svg" alt="play" />
-              watch trailer
-            </button>
-          </div>
-          <div className="pagination">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-          </div>
+        <div className="pagination_wrapper">
+          <div className="pagination"></div>
         </div>
-      </div>
+      </Swiper>
     </header>
   );
 };

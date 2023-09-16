@@ -1,0 +1,323 @@
+.single_movie {
+    display: flex;
+    width: 100%;
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0rem 2.8125rem 2.8125rem 0rem;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .logo {
+                color: #333;
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 1rem;
+
+                span {
+                    font-size: 24px;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 3rem;
+                width: 100%;
+
+                li {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    width: 100%;
+                }
+
+                .home {
+                    margin-left: -15px;
+                }
+
+                .tv_series {
+                    margin-left: -2px;
+                }
+
+                .movies {
+                    background: rgba(190, 18, 60, 0.1);
+                    width: 100%;
+                    padding: 1rem 1rem 1rem 0;
+                    border-right: 5px solid #be123c;
+                }
+            }
+
+            .side_box {
+                border: 1px solid rgba(190, 18, 60, 0.7);
+                padding: 1rem;
+                height: 13.125rem;
+                border-radius: 1.25rem;
+                background: rgba(248, 231, 235, 0.4);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 1rem;
+
+                .top {
+                    width: 8rem;
+                    font-size: 0.9375rem;
+                    color: rgba(51, 51, 51, 0.8);
+                    font-weight: 600;
+                }
+
+                .middle {
+                    color: #666;
+                    font-size: 0.75rem;
+                }
+
+                .bottom {
+                    border-radius: 1.875rem;
+                    background: rgba(190, 18, 60, 0.2);
+                    outline: none;
+                    border: none;
+                    padding: 0.8rem;
+                    cursor: pointer;
+                }
+            }
+
+            .logout_box {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                width: 100%;
+            }
+        }
+    }
+
+    .movie_details_wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+
+        .movie_play_box {
+            width: 100%;
+            height: 28.0625rem;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 5px;
+
+            .play_btn {
+                position: absolute;
+                z-index: 50;
+                width: 6.875rem;
+                height: 6.875rem;
+                background-color: rgba(255, 255, 255, 0.35);
+                top: 40%;
+                left: 45%;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+
+        .movie_details_container {
+            display: flex;
+            width: 100%;
+
+            .movie_details_left {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 1rem;
+                gap: 3rem;
+                width: 58%;
+
+                .title_box_container {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .title_box {
+                        color: #404040;
+                        font-size: 1.4375rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+
+                    .category {
+                        display: flex;
+                        align-items: center;
+                        color: #b91c1c;
+                        font-size: 0.9375rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        gap: 1rem;
+
+                        .cat_1,
+                        .cat_2 {
+                            border-radius: 0.9375rem;
+                            border: 1px solid #f8e7eb;
+                            padding: 5px;
+                        }
+                    }
+                }
+
+                .description {
+                    color: #333;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .crew {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+
+                    .director,
+                    .writers,
+                    .stars {
+                        color: #333;
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        span {
+                            color: #be123c;
+                            font-size: 1.25rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                .ratings_and_awards_container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .ratings_and_awards {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+
+                        .rating {
+                            border-radius: 0.625rem;
+                            background: #be123c;
+                            padding: 1rem;
+                            color: #fff;
+                            font-size: 1.25rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        .award {
+                            color: #333;
+                            font-size: 1.25rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+
+                    img {
+                        padding: 0.5rem;
+                    }
+                }
+            }
+
+            .movie_details_right {
+                width: 42%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // justify-content: center;
+                gap: 3rem;
+                padding: 1rem;
+
+                .num_stars {
+                    align-self: flex-end;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.7rem;
+
+                    p {
+                        .rate {
+                            font-size: 1.25rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+
+                        .views {
+                            font-size: 1.25rem;
+                            color: #666;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                .showtimes {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0.625rem;
+                    background: #be123c;
+                    color: #fff;
+                    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding: 1rem;
+                    width: 22.5rem;
+                    gap: 1rem;
+                    cursor: pointer;
+                }
+                
+                .options {
+                    cursor: pointer;
+                    border-radius: 0.625rem;
+                    border: 1px solid #be123c;
+                    background: rgba(190, 18, 60, 0.1);
+                    padding: 1rem;
+                    width: 22.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+}

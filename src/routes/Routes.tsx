@@ -2,12 +2,11 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 import App from "../App";
 import { Single } from "../components";
 
-
 export const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/">
             <Route index element={<App />} />
-            <Route path="/single" element={<Single />} />
+            <Route path="/movies/:movieId" element={<Single />} />
         </Route>
     )
 )
