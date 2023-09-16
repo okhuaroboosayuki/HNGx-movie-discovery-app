@@ -37,13 +37,13 @@
             flex-wrap: wrap;
             padding-bottom: 1.5rem;
             gap: 5rem;
-            border: .005px dotted lightgray;
+            border: 0.005px dotted lightgray;
             max-width: 78rem;
-            
+
             .movie_list {
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                align-items: flex-start;
+                justify-content: flex-start;
 
                 .movie_card {
                     display: flex;
@@ -152,7 +152,35 @@
                             font-style: normal;
                             font-weight: 700;
                             line-height: normal;
-                            // padding: ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .featured {
+        .featured_container {
+            .heading_container {
+                h2 {
+                    font-size: 1.7rem;
+                }
+            }
+
+            .container {
+                .movie_list {
+                    width: 100%;
+
+                    .movie_card {
+                        .poster {
+                            width: 25.625rem;
+                        }
+
+                        .movie_rating{
+                            justify-content: flex-start;
+                            gap: 1rem;
                         }
                     }
                 }

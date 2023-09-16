@@ -124,10 +124,10 @@ export const Header = ({error, data}: any) => {
                       {movie.overview}
                     </p>
 
-                    <button>
+                    <Link to={`/movies/${movie.id}`} className="link" >
                       <img src="/images/Play.svg" alt="play" />
                       watch trailer
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

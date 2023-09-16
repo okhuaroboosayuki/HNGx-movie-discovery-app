@@ -13,7 +13,7 @@ export const Featured = () => {
     console.log(error);
   }
 
-  const slicedData = data?.results?.slice(0, 8);
+  const slicedData = data?.results?.slice(0, 10);
 
   return (
     <>
@@ -42,7 +42,7 @@ export const Featured = () => {
                       ></div>
                       <div className="movie_category">
                         <div className="movie_type">
-                          <h4>TV SERIES</h4>
+                          <h4>Movie</h4>
                         </div>
                         <div className="like_btn">
                           <img src="/images/heart.svg" alt="like btn" />

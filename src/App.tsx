@@ -1,5 +1,13 @@
-import { Header, Footer, Featured } from "./components";
+import { Suspense, lazy } from "react";
+import { Header, Footer } from "./components";
 import { useFetch } from "./hooks/useFetch";
+import { ComponentLoader } from "./components/loader/Loader";
+
+const Featured = lazy(() =>
+  import("./components/featured/Featured").then(({ Featured }) => ({
+    default: Featured,
+  }))
+);
 
 function App() {
   const apiKey = import.meta.env.VITE_TMDB_API_KEY;
@@ -9,7 +17,9 @@ function App() {
   return (
     <>
       <Header error={error} data={data} />
-      <Featured />
+      <Suspense fallback={<ComponentLoader />}>
+        <Featured />
+      </Suspense>
       <Footer />
     </>
   );
